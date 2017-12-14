@@ -41,4 +41,8 @@
     font-weight: inherit;
 }
 
+.tournoi .table .me{
+    color: red;
+}
+
 

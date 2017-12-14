@@ -52,15 +52,15 @@ if ($bdd->connect_errno) {
                     <div><p>Score</p></div>
                     <div><p>Gagné ?</p></div>
                 </div>
-                <?php $i = 0; ?>
+                <?php $i = 1; ?>
                 <?php while ($row = $gamesAdulte->fetch_assoc()) {
                     ?>
                     <div>
-                        <div><p><?php echo $i; ?></p></div>
-                        <div><p><?php echo $row["login"] ?></p></div>
-                        <div><p><?php echo $row["games_id"] ?></p></div>
-                        <div><p><?php echo $row["player_score"] ?></p></div>
-                        <div><p><?php if ($row["player_win"] == 1): echo 'gagné'; else: echo 'perdu'; endif; ?></p></div>
+                        <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $i; ?></p></div>
+                        <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $row["login"] ?></p></div>
+                        <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $row["games_id"] ?></p></div>
+                        <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $row["player_score"] ?></p></div>
+                        <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php if ($row["player_win"] == 1): echo 'gagné'; else: echo 'perdu'; endif; ?></p></div>
                         <?php $i++; ?>
                     </div>
                     <?php
@@ -90,15 +90,15 @@ if ($bdd->connect_errno) {
                 <div><p>Score</p></div>
                 <div><p>Gagné ?</p></div>
             </div>
-            <?php $i = 0; ?>
+            <?php $i = 1; ?>
                 <?php while ($row = $gamesAdulte->fetch_assoc()) {
             ?>
             <div>
-                <div><p><?php echo $i; ?></p></div>
-                <div><p><?php echo $row["login"] ?></p></div>
-                <div><p><?php echo $row["games_id"] ?></p></div>
-                <div><p><?php echo $row["player_score"] ?></p></div>
-                <div><p><?php if ($row["player_win"] == 1): echo 'gagné'; else: echo 'perdu'; endif; ?></p></div>
+                <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $i; ?></p></div>
+                <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $row["login"] ?></p></div>
+                <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $row["games_id"] ?></p></div>
+                <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $row["player_score"] ?></p></div>
+                <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php if ($row["player_win"] == 1): echo 'gagné'; else: echo 'perdu'; endif; ?></p></div>
                 <?php $i++; ?>
             </div>
             <?php
