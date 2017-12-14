@@ -7,10 +7,11 @@
 </head>
 
 <body>
-<?php try {
-    $bdd = new mysqli("mysql:host=localhost","root", "root", "game");
-} catch (Exception $e) {
-    die('Erreur : ' . $e->getMessage());
+<?php
+$bdd = new mysqli("localhost", "root", "root", "game");
+if ($bdd->connect_errno) {
+    printf("Échec de la connexion : %s\n", $bdd->connect_error);
+    exit();
 }
 ?>
 <?php
@@ -18,15 +19,20 @@ $baseUrl = "monUrl.com";
 $login = $_POST['login'];
 $mdp = $_POST['password'];
 
-if(true): ?>
+$sql = "SELECT password FROM player WHERE login='$login'";
+$findPassword = $bdd->query($sql);
+$testPassword = $findPassword->fetch_row();
+
+if($testPassword[0] == $mdp):
+    //si les logins sont bons
+    header('Location: http://localhost/tintas-web/htdocs/template/accueil.php');
+    exit();
+elseif($testPassword[0] == null):
+    header('Location: http://localhost/tintas-web/htdocs/index.php');
+else:
     //si les logins sont erronées
-    <?php
     header('Location: http://localhost/tintas-web/htdocs/index.php');
     exit();
-    ?>
-<?php else:?>
-    //si les logins sont bons
-
-<?php endif; ?>
-
+endif; ?>
+<?php mysqli_close($bdd); ?>
 </body>

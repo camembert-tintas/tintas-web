@@ -7,10 +7,11 @@
     <title>Tintas : Login</title>
 </head>
 <body class="index">
-<?php try {
-    $bdd = new mysqli("mysql:host=localhost","root", "root", "game");
-} catch (Exception $e) {
-    die('Erreur : ' . $e->getMessage());
+<?php
+$bdd = new mysqli("localhost", "root", "root", "game");
+if ($bdd->connect_errno) {
+    printf("Échec de la connexion : %s\n", $bdd->connect_error);
+    exit();
 }
 ?>
 <div class="login">

@@ -7,8 +7,6 @@
     <title>Tintas : Create account</title>
 </head>
 <body class="index"><h1>Création du compte</h1>
-<?php ini_set('display_errors', 1);?>
-
 <?php
     $bdd = new mysqli("localhost", "root", "root", "game");
 if ($bdd->connect_errno) {
