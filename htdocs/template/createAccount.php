@@ -30,6 +30,10 @@ if ($bdd->connect_errno) {
             <input type="password" name="verifpassword" id="password"/>
         </div>
         <div>
+            <label for="age">Age :</label>
+            <input type="text" name="age" id="age"/>
+        </div>
+        <div>
             <label for="email">Email :</label>
             <input type="email" name="email" id="email"/>
         </div>

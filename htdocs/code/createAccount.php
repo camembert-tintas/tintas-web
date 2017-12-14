@@ -18,10 +18,11 @@ if ($bdd->connect_errno) {
 <?php $login = $_POST['login'];
 $mdp = $_POST['password'];
 $email = $_POST['email'];
+$age = $_POST['age'];
 ?>
 
 <?php
-$sql = "INSERT INTO player (login, password, email) VALUES ('$login', '$mdp', '$email')";
+$sql = "INSERT INTO player (login, password, age, email) VALUES ('$login', '$mdp', '$age', '$email')";
 
 if ($bdd->query($sql) === TRUE) {
     header('Location: http://localhost/tintas-web/htdocs/template/accueil.php');
