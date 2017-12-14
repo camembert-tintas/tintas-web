@@ -8,8 +8,7 @@
 
 <body>
 <?php try {
-    $bdd = new PDO('mysql:host=localhost;dbname=game;charset=utf8', 'root', 'root');
-    //$goodLog = $bdd->query('SELECT login FROM logins');
+    $bdd = new mysqli("mysql:host=localhost","root", "root", "game");
 } catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 }
@@ -20,25 +19,14 @@ $login = $_POST['login'];
 $mdp = $_POST['password'];
 
 if(true): ?>
+    //si les logins sont erronées
     <?php
     header('Location: http://localhost/tintas-web/htdocs/index.php');
     exit();
     ?>
 <?php else:?>
-    <?php
-    if($login=='oceane') {
-        $_SESSION['login'] = 'oceane';
-        $_SESSION['mdp'] = 'coeur';
-    }else{
+    //si les logins sont bons
 
-        $_SESSION['login'] = 'maxime';
-        $_SESSION['mdp'] = 'namour';
-    }
-    ?>
-    <?php
-    header('Location: http://localhost/tintas-web/htdocs/template/accueil.php');
-    exit();
-    ?>
 <?php endif; ?>
 
 </body>

@@ -8,7 +8,7 @@
 </head>
 <body class="index">
 <?php try {
-    $bdd = new PDO('mysql:host=localhost;dbname=game;charset=utf8', 'root', 'root');
+    $bdd = new mysqli("mysql:host=localhost","root", "root", "game");
 } catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 }
