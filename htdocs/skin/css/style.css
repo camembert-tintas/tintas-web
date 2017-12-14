@@ -3,8 +3,69 @@ body{
     margin-left: -1px;
     margin-right: -1px;
     margin-top: -21px;
+    margin-bottom: 0;
 }
 
 a{
     color: white;
+}
+
+header{
+    background-color: #6E6E6E;
+    height: 300px;
+}
+
+.title{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title h1{
+    margin-left: 50px;
+    color: White;
+}
+
+nav, nav div{
+    height: 50px;
+    background-color: #585858;
+    display: flex;
+    min-width: 104px;
+}
+
+nav div:last-child{
+    margin-left: 72%;
+}
+
+nav div{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+nav div:hover{
+    background-color: #2E2E2E;
+}
+
+
+nav div a{
+    text-align: center;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #E6E6E6;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+}
+
+footer span{
+    font-weight: bold;
 }

@@ -1,0 +1,25 @@
+.accueil{
+    display: flex;
+    min-height: 480px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.accueil img{
+    width: 400px;
+    height:400px;
+    padding-top: 40px;
+    padding-right: 50px;
+}
+
+.accueil div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.accueil p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
