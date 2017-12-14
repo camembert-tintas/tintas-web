@@ -35,7 +35,7 @@ nav, nav div{
 }
 
 nav div:last-child{
-    margin-left: 72%;
+    margin-left: 64%;
 }
 
 nav div{
@@ -55,6 +55,11 @@ nav div:hover{
 nav div a{
     text-align: center;
     text-decoration: none;
+}
+
+main{
+    min-height: 480px;
+    box-sizing: border-box;
 }
 
 footer{

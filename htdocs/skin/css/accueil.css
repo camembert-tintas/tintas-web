@@ -1,6 +1,5 @@
 .accueil{
     display: flex;
-    min-height: 480px;
     justify-content: center;
     box-sizing: border-box;
 }

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -24,6 +25,7 @@ if ($bdd->connect_errno) {
         <div><a href="regles.php">Règles</a></div>
         <div><a href="mesScores.php">Mes scores</a></div>
         <div><a href="tournois.php" >Tournois</a></div>
+        <div><a href="telechargement.php" >Telecharger le jeu</a></div>
         <div><a href="#">Deconnexion</a></div>
     </nav>
 </header>

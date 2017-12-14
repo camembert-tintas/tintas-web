@@ -24,6 +24,8 @@ $findPassword = $bdd->query($sql);
 $testPassword = $findPassword->fetch_row();
 
 if($testPassword[0] == $mdp):
+    $_SESSION['login'] = $login;
+    $_SESSION['password'] = $mdp;
     //si les logins sont bons
     header('Location: http://localhost/tintas-web/htdocs/template/accueil.php');
     exit();

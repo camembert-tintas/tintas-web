@@ -1,0 +1,44 @@
+.mes_scores div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mes_scores div:first-child p{
+    text-align: center;
+}
+
+.mes_scores p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mes_scores td{
+    min-width: 50px;
+}
+
+.mes_scores .table div{
+    display: flex;
+    flex-direction: row;
+}
+
+.mes_scores .table .intitule{
+    font-weight: bold;
+}
+
+.mes_scores .table div div{
+    border: 1px solid black;
+    width: 165px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mes_scores .table div div p{
+    text-align: center;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+

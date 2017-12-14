@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -24,6 +25,13 @@ if ($bdd->connect_errno) {
         <div><a href="#">Règles</a></div>
         <div><a href="mesScores.php">Mes scores</a></div>
         <div><a href="tournois.php" >Tournois</a></div>
+        <div><a href="telechargement.php" >Telecharger le jeu</a></div>
         <div><a href="#">Deconnexion</a></div>
     </nav>
 </header>
+<main>
+</main>
+<footer>
+    <p><span>Ce jeu a été réalisé par :</span><br/>Océane Rousseeuw<br/>Maxime Sauvage<br/>Bryan Sandras<br/>Vincent Persyn<br/>Benoît Verhaghe</p>
+</footer>
+</body>
