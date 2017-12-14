@@ -1,0 +1,44 @@
+.tournoi div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tournoi .no_one p, .tournoi .resultats p{
+    text-align: center;
+}
+
+.tournoi p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tournoi td{
+    min-width: 50px;
+}
+
+.tournoi .table div{
+    display: flex;
+    flex-direction: row;
+}
+
+.tournoi .table .intitule{
+    font-weight: bold;
+}
+
+.tournoi .table div div{
+    border: 1px solid black;
+    width: 165px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tournoi .table div div p{
+    text-align: center;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+

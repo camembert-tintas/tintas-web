@@ -30,6 +30,83 @@ if ($bdd->connect_errno) {
     </nav>
 </header>
 <main>
+    <div class="tournoi">
+        <?php
+        $login = $_SESSION['login'];
+        $sqlAdulte = "SELECT player.login, games.games_id, games.player_score, games.player_win 
+            FROM games INNER JOIN player 
+            WHERE player.id = games.player_id AND player.age>=18
+            ORDER BY games.player_score DESC";
+        $gamesAdulte = $bdd->query($sqlAdulte);
+        if ($gamesAdulte->num_rows == 0): ?>
+            <div class="no_one">
+                <p>Aucun adulte n'a encore jouer...</p>
+            </div>
+        <?php else: ?>
+            <div class="resultats"><p>Tables des scores Adulte</p></div>
+            <div class="table">
+                <div class="intitule">
+                    <div><p>Place</p></div>
+                    <div><p>Login</p></div>
+                    <div><p>Identifiant partie</p></div>
+                    <div><p>Score</p></div>
+                    <div><p>Gagné ?</p></div>
+                </div>
+                <?php $i = 0; ?>
+                <?php while ($row = $gamesAdulte->fetch_assoc()) {
+                    ?>
+                    <div>
+                        <div><p><?php echo $i; ?></p></div>
+                        <div><p><?php echo $row["login"] ?></p></div>
+                        <div><p><?php echo $row["games_id"] ?></p></div>
+                        <div><p><?php echo $row["player_score"] ?></p></div>
+                        <div><p><?php if ($row["player_win"] == 1): echo 'gagné'; else: echo 'perdu'; endif; ?></p></div>
+                        <?php $i++; ?>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
+        <?php endif; ?>
+
+        <?php
+        $login = $_SESSION['login'];
+        $sqlAdulte = "SELECT player.login, games.games_id, games.player_score, games.player_win 
+            FROM games INNER JOIN player 
+            WHERE player.id = games.player_id AND player.age<18
+            ORDER BY games.player_score DESC";
+        $gamesAdulte = $bdd->query($sqlAdulte);
+        if ($gamesAdulte->num_rows == 0): ?>
+        <div class="no_one">
+            <p>Aucun enfant n'a encore jouer...</p>
+        </div>
+        <?php else: ?>
+        <div class="resultats"><p>Tables des scores Enfant</p></div>
+        <div class="table">
+            <div class="intitule">
+                <div><p>Place</p></div>
+                <div><p>Login</p></div>
+                <div><p>Identifiant partie</p></div>
+                <div><p>Score</p></div>
+                <div><p>Gagné ?</p></div>
+            </div>
+            <?php $i = 0; ?>
+                <?php while ($row = $gamesAdulte->fetch_assoc()) {
+            ?>
+            <div>
+                <div><p><?php echo $i; ?></p></div>
+                <div><p><?php echo $row["login"] ?></p></div>
+                <div><p><?php echo $row["games_id"] ?></p></div>
+                <div><p><?php echo $row["player_score"] ?></p></div>
+                <div><p><?php if ($row["player_win"] == 1): echo 'gagné'; else: echo 'perdu'; endif; ?></p></div>
+                <?php $i++; ?>
+            </div>
+            <?php
+            }
+            ?>
+        </div>
+        <?php endif; ?>
+    </div>
 </main>
 <footer>
     <p><span>Ce jeu a été réalisé par :</span><br/>Océane Rousseeuw<br/>Maxime Sauvage<br/>Bryan Sandras<br/>Vincent Persyn<br/>Benoît Verhaghe</p>
