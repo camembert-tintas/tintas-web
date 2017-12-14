@@ -1,0 +1,27 @@
+.telechargement div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.telechargement h2{
+    text-align: center;
+}
+
+.telechargement p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.telechargement a{
+    color: red;
+    font-weight: bold;
+
+}
+
+.instructions{
+    margin-top: 50px;
+    margin-left: 28%;
+}
+
