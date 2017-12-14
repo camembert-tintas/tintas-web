@@ -36,6 +36,7 @@
             <button type="submit">S'inscrire</button>
         </div>
     </form>
+    <a href="../index.php">Retour à l'accueil</a>
 </div>
 </body>
 </html>

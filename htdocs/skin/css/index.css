@@ -1,7 +1,7 @@
 
 .index .login{
     box-sizing: border-box;
-    background-color: #3F51B5;
+    background-color: #6E6E6E;
     width: 40%;
     padding: 30px;
     color: white;
@@ -18,14 +18,19 @@
 .index form div{
     padding-top: 10px;
     padding-bottom:10px;
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.index form div:last-child{
+    justify-content: center;
 }
 
 .index form label{
     display: inline-block;
-    min-width: 90px;
 }
 
 .index form input{
@@ -43,7 +48,7 @@
     padding-left: 15px;
     padding-right:15px;
     margin-top: 20px;
-    background-color: #303F9F;
+    background-color: #2E2E2E;
     color: white;
     font-size: 18px;
 }

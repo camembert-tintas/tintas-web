@@ -21,7 +21,7 @@ $mdp = $_POST['password'];
 
 if(true): ?>
     <?php
-    header('Location: http://localhost/mysite/htdocs/index.php');
+    header('Location: http://localhost/tintas-web/htdocs/index.php');
     exit();
     ?>
 <?php else:?>
@@ -36,7 +36,7 @@ if(true): ?>
     }
     ?>
     <?php
-    header('Location: http://localhost/mysite/htdocs/template/accueil.php');
+    header('Location: http://localhost/tintas-web/htdocs/template/accueil.php');
     exit();
     ?>
 <?php endif; ?>
