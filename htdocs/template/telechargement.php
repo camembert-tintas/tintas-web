@@ -32,13 +32,13 @@ if ($bdd->connect_errno) {
 <main>
     <div class="telechargement">
         <h2>Pour jouer, télécharger le fichier .zip ci dessous et suivez les instructions !</h2>
-        <p><a href="../skin/files/game.zip" download="game">Télécharger</a></p>
+        <p><a href="../skin/files/tintas-0.0.1-SNAPSHOT.jar" download="game">Télécharger</a></p>
     </div>
     <div class="instructions">
         <h2>Instructions:</h2>
-        <p>bla</p>
-        <p>bla</p>
-        <p>et re bla</p>
+        <p>Se placer dans le dossier où est le fichier</p>
+        <p>lancer la commande dans le terminal:</p>
+        <p>java -jar tintas-0.0.1-SNAPSHOT.jar</p>
     </div>
 </main>
 <footer>
