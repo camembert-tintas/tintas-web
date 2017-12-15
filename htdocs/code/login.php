@@ -27,13 +27,13 @@ if($testPassword[0] == $mdp):
     $_SESSION['login'] = $login;
     $_SESSION['password'] = $mdp;
     //si les logins sont bons
-    header('Location: http://localhost/tintas-web/htdocs/template/accueil.php');
+    header('Location: https://www.vincentpersyn.fr/template/accueil.php');
     exit();
 elseif($testPassword[0] == null):
-    header('Location: http://localhost/tintas-web/htdocs/index.php');
+    header('Location: https://www.vincentpersyn.fr/template/index.php');
 else:
     //si les logins sont erronées
-    header('Location: http://localhost/tintas-web/htdocs/index.php');
+    header('Location: https://www.vincentpersyn.fr/template/index.php');
     exit();
 endif; ?>
 <?php mysqli_close($bdd); ?>

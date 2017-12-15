@@ -8,7 +8,7 @@
 </head>
 <body class="index">
 <?php
-$bdd = new mysqli("localhost", "root", "root", "game");
+$bdd = new mysqli("localhost", "tintas-sql", "tintas-sql", "tintas");
 if ($bdd->connect_errno) {
     printf("Échec de la connexion : %s\n", $bdd->connect_error);
     exit();

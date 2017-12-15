@@ -10,7 +10,7 @@
 </head>
 <body class="index">
 <?php
-$bdd = new mysqli("localhost", "root", "root", "game");
+$bdd = new mysqli("localhost", "tintas-sql", "tintas-sql", "tintas");
 if ($bdd->connect_errno) {
     printf("Échec de la connexion : %s\n", $bdd->connect_error);
     exit();
@@ -18,7 +18,7 @@ if ($bdd->connect_errno) {
 ?>
 <header>
     <div class="title">
-        <h1>Accueil</h1>
+        <h1>Téléchargement</h1>
     </div>
     <nav>
         <div><a href="accueil.php">Accueil</a></div>

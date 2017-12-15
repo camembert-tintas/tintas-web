@@ -26,7 +26,7 @@ $age = $_POST['age'];
 $sql = "INSERT INTO player (login, password, age, email) VALUES ('$login', '$mdp', '$age', '$email')";
 
 if ($bdd->query($sql) === TRUE) {
-    header('Location: http://localhost/tintas-web/htdocs/template/accueil.php');
+    header('Location: https://www.vincentpersyn.fr/template/accueil.php');
 }else {
     echo 'erreur !' . $bdd->error;
 }
