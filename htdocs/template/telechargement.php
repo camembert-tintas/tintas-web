@@ -1,3 +1,5 @@
+<<<<<<< Updated upstream
+=======
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -30,8 +32,19 @@ if ($bdd->connect_errno) {
     </nav>
 </header>
 <main>
+    <div class="telechargement">
+        <h2>Pour jouer, télécharger le fichier .zip ci dessous et suivez les instructions !</h2>
+        <p><a href="../skin/files/game.zip" download="game">Télécharger</a></p>
+    </div>
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <p>bla</p>
+        <p>bla</p>
+        <p>et re bla</p>
+    </div>
 </main>
 <footer>
     <p><span>Ce jeu a été réalisé par :</span><br/>Océane Rousseeuw<br/>Maxime Sauvage<br/>Bryan Sandras<br/>Vincent Persyn<br/>Benoît Verhaghe</p>
 </footer>
 </body>
+>>>>>>> Stashed changes

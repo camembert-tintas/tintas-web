@@ -1,24 +1,27 @@
-.accueil{
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.accueil img{
-    width: 400px;
-    height:400px;
-    padding-top: 40px;
-    padding-right: 50px;
-}
-
-.accueil div{
+.telechargement div{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.accueil p{
-    font-size: 40px;
+.telechargement h2{
+    text-align: center;
+}
+
+.telechargement p{
+    text-align: center;
+    font-size: 20px;
     font-weight: bold;
+}
+
+.telechargement a{
+    color: red;
+    font-weight: bold;
+
+}
+
+.instructions{
+    margin-top: 50px;
+    margin-left: 28%;
 }
 
