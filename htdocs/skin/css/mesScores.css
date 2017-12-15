@@ -42,3 +42,9 @@
 }
 
 
+@media screen and (max-width: 699px){
+    .mes_scores .table div div {
+        font-size: 12px;
+    }
+}
+

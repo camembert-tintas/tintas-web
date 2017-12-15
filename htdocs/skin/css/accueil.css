@@ -22,3 +22,19 @@
     font-weight: bold;
 }
 
+
+@media screen and (max-width: 360px){
+    .accueil{
+        display: block;
+    }
+    .accueil img{
+        width: 290px;
+        height:290px;
+        padding: 0;
+        padding-left: 30px;
+    }
+    
+    .accueil p{
+        text-align: center;
+    }
+}
