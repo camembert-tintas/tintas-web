@@ -50,6 +50,11 @@
 .mes_scores .share div:first-child a{
     background-color: #1DA1F2;
     text-decoration: none;
+    font-size: 9px;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: -4px;
 }
 
 .mes_scores .share div{
