@@ -41,6 +41,30 @@
     font-weight: inherit;
 }
 
+.mes_scores .share{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mes_scores .share div{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mes_scores .share .facebook{
+    display: inline-block;
+    background-color: #4267B2;
+    color: white;
+    border-radius: 4%;
+    font-size: 9px;
+    height: 20px;
+
+}
+.mes_scores .share .facebook a {
+    text-decoration: none;
+    line-height: 20px;
+}
 
 @media screen and (max-width: 699px){
     .mes_scores .table div div {
