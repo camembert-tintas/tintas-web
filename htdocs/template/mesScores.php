@@ -56,7 +56,7 @@ if ($bdd->connect_errno) {
                     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
                 </div>
                 <div class="facebook">
-                    <a href="http://www.facebook.com/sharer.php?u=<http://localhost/tintas-web/htdocs/template/mesScores.php>&t=<Mes scores à Tintas>">Facebook</a>
+                    <a href="http://www.facebook.com/sharer.php?u=<https://www.vincentpersyn.fr/template/mesScores.php>&t=<Mes scores à Tintas>">Facebook</a>
                 </div>
                 <div>
                     <g:plusone size="tall"></g:plusone>
