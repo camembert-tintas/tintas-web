@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -47,4 +45,3 @@ if ($bdd->connect_errno) {
     <p><span>Ce jeu a été réalisé par :</span><br/>Océane Rousseeuw<br/>Maxime Sauvage<br/>Bryan Sandras<br/>Vincent Persyn<br/>Benoît Verhaghe</p>
 </footer>
 </body>
->>>>>>> Stashed changes
