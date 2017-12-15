@@ -61,8 +61,11 @@ if ($bdd->connect_errno) {
                         <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $row["games_id"] ?></p></div>
                         <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php echo $row["player_score"] ?></p></div>
                         <div><p <?php if($row["login"] == $login): echo 'class="me"'; endif; ?>><?php if ($row["player_win"] == 1): echo 'gagné'; else: echo 'perdu'; endif; ?></p></div>
-                        <?php $i++; ?>
                     </div>
+                    <?php if ($i==1 && $row['login']== $login):?>
+                        <div><a class="contact" href="contact_boite.php">Récupérer ma boite de jeu</a></div>
+                    <?php endif; ?>
+                    <?php $i++; ?>
                     <?php
                 }
                 ?>

@@ -45,6 +45,10 @@
     color: red;
 }
 
+.tournoi .table .contact{
+    color: blue;
+}
+
 @media screen and (min-width: 321px) and (max-width: 699px){
     .tournoi .table div div {
         font-size: 11px;
