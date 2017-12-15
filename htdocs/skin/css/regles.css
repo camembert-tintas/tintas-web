@@ -1,0 +1,28 @@
+.regles div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.regles h2{
+    text-align: center;
+}
+
+.regles p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.instructions{
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 26%;
+}
+
+.instructions p{
+    text-align: justify;
+    font-weight: inherit;
+    line-height: 20px;
+    margin-top: 0;
+}
